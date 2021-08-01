@@ -37,7 +37,7 @@ namespace RSATutorial
             Console.WriteLine($"Decrypted Text: {plainTextData}");
             _ = Console.ReadKey();*/
 
-            string myFile= "C:\\Users\\upret\\source\\repos\\RSATutorial\\RSATutorial\\myFile.txt";
+            string myFile= new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.FullName+"\\myFile.txt";
             Console.WriteLine($"Encrypting the file: {myFile}");
 
 
